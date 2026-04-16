@@ -2,10 +2,10 @@ import React from 'react';
 import './LandingPage.css';
 import Navbar from '../components/Navbar/Navbar';
 import MyPicture from '../assets/images/myPicture.webp';
-import { SiAppwrite, SiCss, SiGithub, SiHtml5, SiJavascript, SiReact, SiVercel, SiNetlify, SiGit, SiWhatsapp, SiGmail, SiFacebook, SiX, SiDiscord, SiTelegram, SiInstagram, SiFigma } from '@icons-pack/react-simple-icons';
+import { SiAppwrite, SiCss, SiGithub, SiHtml5, SiJavascript, SiReact, SiVercel, SiNetlify, SiGit, SiWhatsapp, SiGmail, SiFacebook, SiX, SiDiscord, SiTelegram, SiInstagram, SiFigma, SiNextdotjs, SiSupabase, SiKalilinux } from '@icons-pack/react-simple-icons';
 import { FaLinkedin } from 'react-icons/fa';
 
-const skills = [<SiAppwrite size={50} />, <SiHtml5 size={50} />, <SiCss size={50} />, <SiJavascript size={50} />, <SiReact size={50} />, <SiGithub size={50} />, <SiFigma size={50} />, <SiVercel size={50} />, <SiNetlify size={50} />, <SiGit size={50} />];
+const skills = [<SiAppwrite size={50} />, <SiHtml5 size={50} />, <SiCss size={50} />, <SiJavascript size={50} />, <SiReact size={50} />, <SiGithub size={50} />, <SiFigma size={50} />, <SiVercel size={50} />, <SiNetlify size={50} />, <SiGit size={50} />, <SiNextdotjs size={50} />, <SiSupabase size={50} />, <SiKalilinux size={50} />];
 
 
 const LandingPage = () => {
