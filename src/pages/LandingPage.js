@@ -64,11 +64,12 @@ const LandingPage = () => {
 
                     </a>
 
-                    <a href='https://google.com' className='Zaytooon-card'>
+                    <a href='https://play.google.com/store/apps/details?id=com.zaytooon.sudandelivery' className='Zaytooon-card'>
 
                         <h1> Delivery System </h1>
                         <p>
-                            Been a part of a team that built a completed food Delivery System, which includes a customer app, a driver app, and an admin panel.
+                            Been a part of a team that built a completed food Delivery System, which includes a customer app, a driver app, and an admin panel. <br /> <br />
+                            Zaytooon is name of the production app, which is launched and used currently in Sudan, custumer app is now live on google play with over 1000+ downloads , you can search "Zaytooon Sudan" on google play to check it out
                         </p>
 
                     </a>
