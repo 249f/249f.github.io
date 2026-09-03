@@ -1,11 +1,18 @@
 import './App.css';
 import LandingPage from './pages/LandingPage';
+import Projects from './pages/projects';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </Router>
       <Analytics />
     </div>
   );
