@@ -37,7 +37,7 @@ const LandingPage = () => {
                 {/* projects cards */}
                 <div className='project-cards-holder'>
 
-                    <a href='https://amanak-sd.com' className='amanak-card'>
+                    <a href='https://amanak-sd.com' className='amanak-card' target='_blank' rel='noopener noreferrer'>
 
 
                         <h1> Warehouse Management Ecosystem </h1>
@@ -55,7 +55,7 @@ const LandingPage = () => {
 
                     </a>
 
-                    <a href='https://design-by-drop.vercel.app' className='dbd-card'>
+                    <a href='https://design-by-drop.vercel.app' className='dbd-card' target='_blank' rel='noopener noreferrer'>
 
                         <h1> Design By Drop </h1>
                         <p>
@@ -64,7 +64,7 @@ const LandingPage = () => {
 
                     </a>
 
-                    <a href='https://play.google.com/store/apps/details?id=com.zaytooon.sudandelivery' className='Zaytooon-card'>
+                    <a href='https://play.google.com/store/apps/details?id=com.zaytooon.sudandelivery' className='Zaytooon-card' target='_blank' rel='noopener noreferrer'>
 
                         <h1> Delivery System </h1>
                         <p>
