@@ -2,9 +2,10 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import './projects.css'
 import AmanakSS from '../assets/images/projectsSS/amanak.png';
+import { Link } from 'react-router-dom';
 const Projects = () => {
     return (
-        <>
+        <div className='main-projects'>
             <Navbar />
             <div className='projects-container'>
                 {/*Title*/}
@@ -21,6 +22,11 @@ const Projects = () => {
                             <p>
                                 Amanak is a Warehouse Management System that includes many features making it almost as an ERP system , it features a role based access control system ensuring that each user has access to only what they need and what they are allowed to do. also allowing the business owner to manage , follow , and control more than one warehouse at the same time from one dashboard.
                             </p>
+                            <div className='production-buttons'>
+                                <a href="https://amanak-sd.com/" target='_blank' rel='noopener noreferrer'>Visit Website</a>
+                                <Link to='/amanak'>Read more</Link>
+
+                            </div>
 
                         </div>
 
@@ -33,7 +39,7 @@ const Projects = () => {
 
                 </div>
             </div >
-        </>
+        </div>
     );
 };
 

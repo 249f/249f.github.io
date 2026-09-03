@@ -1,6 +1,7 @@
 import './App.css';
 import LandingPage from './pages/LandingPage';
 import Projects from './pages/projects';
+import Amanak from './pages/projects/amanak';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Analytics } from "@vercel/analytics/react"
 
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/amanak" element={<Amanak />} />
         </Routes>
       </Router>
       <Analytics />
