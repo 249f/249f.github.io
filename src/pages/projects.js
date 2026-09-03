@@ -6,7 +6,7 @@ const Projects = () => {
         <>
             <Navbar />
             <div className='projects-container'>
-                <h1>projects</h1>
+                <h1>This page is under development right now , check back later </h1>
             </div>
         </>
     );
