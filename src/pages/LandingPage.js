@@ -207,7 +207,7 @@ const LandingPage = () => {
                         <h6>Github</h6>
                     </a>
 
-                    <a href="https://www.facebook.com/249ff" className='contact-card'>
+                    <a href="https://www.facebook.com/lgezz" className='contact-card'>
                         <SiFacebook size={45} />
                         <h6>Facebook</h6>
                     </a>
@@ -223,7 +223,7 @@ const LandingPage = () => {
                         <SiTelegram size={45} />
                         <h6>Telegram</h6>
                     </a>
-                    <a href="https://www.instagram.com/otp_ali" className='contact-card'>
+                    <a href="https://www.instagram.com/249f4" className='contact-card'>
                         <SiInstagram size={45} />
                         <h6>Instagram</h6>
                     </a>
