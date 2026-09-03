@@ -37,8 +37,18 @@
     font-size: large;
 }
 
+.production-card p {
+    height: 140px;
+    min-height: fit-content;
+}
+
 .production-cards-holder {
     margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
 .production-buttons {
@@ -56,4 +66,10 @@
     min-width: fit-content;
     text-align: center;
     font-weight: 600;
+}
+
+.projects-main h2 {
+    border-left: 5px solid rgb(205, 205, 205);
+    padding-left: 8px;
+    margin-bottom: 10px;
 }

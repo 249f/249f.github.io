@@ -5,7 +5,8 @@ const Amanak = () => {
     return (
         <div className='amanak-page'>
             <Navbar />
-            <h1>Amanak</h1>
+            <h1 className='under-development-title'>Under Development</h1>
+            <p className='under-development-subtitle'>this page is currently under development and isn't Ready Yet  :) </p>
 
 
 
