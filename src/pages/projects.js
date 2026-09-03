@@ -24,7 +24,7 @@ const Projects = () => {
                             </p>
                             <div className='production-buttons'>
                                 <a href="https://amanak-sd.com/" target='_blank' rel='noopener noreferrer'>Visit Website</a>
-                                <Link to='/amanak'>Read more</Link>
+                                <Link to='/projects/amanak'>Read more</Link>
 
                             </div>
 
