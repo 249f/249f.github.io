@@ -18,7 +18,7 @@ const Projects = () => {
                     <p>these are projects that went to production and are used by real users and real data at this moment :</p>
                     <div className='production-cards-holder'>
                         <div className='production-card'>
-                            <img src={AmanakSS} alt='amanak img' />
+                            <div className='production-img-container'><img src={AmanakSS} alt='amanak img' /></div>
                             <h4>Amanak</h4>
                             <p>
                                 Amanak is a Warehouse Management System that includes many features making it almost as an ERP system , it features a role based access control system ensuring that each user has access to only what they need and what they are allowed to do. also allowing the business owner to manage , follow , and control more than one warehouse at the same time from one dashboard.
@@ -32,7 +32,8 @@ const Projects = () => {
                         </div>
                         {/*Second Production Card*/}
                         <div className='production-card'>
-                            <img src={ZaytooonSS} alt='Zaytooon img' />
+
+                            <div className='production-img-container'><img src={ZaytooonSS} alt='Zaytooon img' /></div>
                             <h4>Zaytooon</h4>
                             <p>
                                 Zaytooon is a food delivery platform , building Zaytooon was one of the most challenging projects I've worked on as it included a customer app, a delivery driver app, and an admin panel.
