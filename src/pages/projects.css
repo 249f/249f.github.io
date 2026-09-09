@@ -128,4 +128,15 @@
     gap: 50px;
     justify-content: center;
 
+
+}
+
+.hobby-cards-holder h4 {
+    margin-top: 10px;
+    font-size: large;
+}
+
+.hobby-cards-holder p {
+    height: 100px;
+    min-height: fit-content;
 }

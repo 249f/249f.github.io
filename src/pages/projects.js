@@ -5,6 +5,7 @@ import AmanakSS from '../assets/images/projectsSS/amanak.png';
 import ZaytooonSS from '../assets/images/projectsSS/zaytooon.png';
 import dbd from '../assets/images/projectsSS/dbd.png';
 import d3g from '../assets/images/projectsSS/3dg.png';
+import carw from '../assets/images/projectsSS/carsw.png';
 import { Link } from 'react-router-dom';
 const Projects = () => {
     return (
@@ -89,6 +90,28 @@ const Projects = () => {
                             <div className='production-buttons'>
                                 <a href="https://3d-g.vercel.app" target='_blank' rel='noopener noreferrer'>Visit Website</a>
                                 <a href='https://github.com/249f/3D-github-readme-only'>See on GitHub</a>
+
+                            </div>
+
+
+                        </div>
+                        {/*Third hobby card*/}
+                        <div className='hobby-card'>
+                            <div className='production-img-container'>
+                                <img src={carw} alt="cars dealership img" />
+                            </div>
+                            <h4>
+                                Cars DealerShip Website
+                            </h4>
+                            <p>
+                                a simple website for a cars dealership , it includes a list of cars with their prices and specifications.
+                                <br />
+                                <br />
+                                for this website i used Next.js , the main goal was to practice using Next.js Framework and get used to it's features.
+                            </p>
+                            <div className='production-buttons'>
+                                <a href="https://cars-dealership-website.vercel.app" target='_blank' rel='noopener noreferrer'>Visit Website</a>
+                                <a href='https://github.com/249f/cars-dealership-website'>See on GitHub</a>
 
                             </div>
 
