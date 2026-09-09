@@ -97,3 +97,30 @@
     padding-left: 8px;
     margin-bottom: 10px;
 }
+
+.hobby-card {
+    border: 2px solid #ffffff;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 13px;
+    max-width: 40%;
+    min-width: 335px;
+
+
+}
+
+.hobby-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.hobby-card img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.hobby-cards-holder {
+    margin-top: 50px;
+}

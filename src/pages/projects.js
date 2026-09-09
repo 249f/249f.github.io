@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar/Navbar';
 import './projects.css'
 import AmanakSS from '../assets/images/projectsSS/amanak.png';
 import ZaytooonSS from '../assets/images/projectsSS/zaytooon.png';
+import dbd from '../assets/images/projectsSS/dbd.png';
 import { Link } from 'react-router-dom';
 const Projects = () => {
     return (
@@ -55,9 +56,22 @@ const Projects = () => {
                     <h2>Hobby Projects :</h2>
                     <p>these are projects I worked on through out my learning journey :</p>
                     <div className='hobby-cards-holder'>
-                        <div className='dbd-card'>
-                            {/* <h4>i'm just lazzy to finish this page today</h4> */}
-                            {/* <p>Design By Drop is a free open source tool to help HTML CSS beginners to create simple designs without writing code.</p> */}
+                        <div className='hobby-card'>
+                            <div className='production-img-container'>
+                                <img src={dbd} alt="design by drop img" />
+                            </div>
+                            <h4>
+                                Design By Drop (DBD)
+                            </h4>
+                            <p>
+                                Design By Drop is an open source tool , i built it to help HTML CSS beginners to create simple designs without writing code, simple yet effective tool uses shapes and other HTML elements to create designs, allowing users to change colors, sizes, positions, and other properties of the elements, and export the code to use in their projects, with the ability to download a ready to use HTML file with all the styles and structure.
+                            </p>
+                            <div className='production-buttons'>
+                                <a href="https://design-by-drop.vercel.app" target='_blank' rel='noopener noreferrer'>Visit Website</a>
+                                <a href='https://github.com/249f/design_by_drop'>See on GitHub</a>
+
+                            </div>
+
 
                         </div>
 
