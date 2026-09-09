@@ -123,4 +123,9 @@
 
 .hobby-cards-holder {
     margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
 }

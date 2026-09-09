@@ -4,6 +4,7 @@ import './projects.css'
 import AmanakSS from '../assets/images/projectsSS/amanak.png';
 import ZaytooonSS from '../assets/images/projectsSS/zaytooon.png';
 import dbd from '../assets/images/projectsSS/dbd.png';
+import d3g from '../assets/images/projectsSS/3dg.png';
 import { Link } from 'react-router-dom';
 const Projects = () => {
     return (
@@ -69,6 +70,25 @@ const Projects = () => {
                             <div className='production-buttons'>
                                 <a href="https://design-by-drop.vercel.app" target='_blank' rel='noopener noreferrer'>Visit Website</a>
                                 <a href='https://github.com/249f/design_by_drop'>See on GitHub</a>
+
+                            </div>
+
+
+                        </div>
+                        {/*Second hobby card*/}
+                        <div className='hobby-card'>
+                            <div className='production-img-container'>
+                                <img src={d3g} alt="3d-g img" />
+                            </div>
+                            <h4>
+                                3D GitHub Contribution Grid
+                            </h4>
+                            <p>
+                                this is a tool to help pepole to genrate a 3d contribution graph for thire github profile , it's one of the most easiest and fastest ways to create a 3d contribution graph for your github profile , without any extra steps or coding knowledge , just paste your username and let the tool do the rest ,
+                            </p>
+                            <div className='production-buttons'>
+                                <a href="https://3d-g.vercel.app" target='_blank' rel='noopener noreferrer'>Visit Website</a>
+                                <a href='https://github.com/249f/3D-github-readme-only'>See on GitHub</a>
 
                             </div>
 
