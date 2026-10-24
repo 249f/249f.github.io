@@ -66,9 +66,9 @@ const LandingPage = () => {
 
                     <a href='https://play.google.com/store/apps/details?id=com.zaytooon.sudandelivery' className='Zaytooon-card' target='_blank' rel='noopener noreferrer'>
 
-                        <h1> Delivery System </h1>
+                        <h1> Food Delivery Platform </h1>
                         <p>
-                            Been a part of a team that built a completed food Delivery System, which includes a customer app, a driver app, and an admin panel. <br /> <br />
+                            built a completed food Delivery System, which includes a customer app, a driver app, and an admin panel. <br /> <br />
                             Zaytooon is name of the production app, which is launched and used currently in Sudan, custumer app is now live on google play with over 1000+ downloads , you can search "Zaytooon Sudan" on google play to check it out
                         </p>
 
@@ -143,7 +143,7 @@ const LandingPage = () => {
                         </div>
                         <div className='skill-card'>
                             <h1>JavaScript</h1>
-                            <p>Basic understanding with the ability to create simple and interactive web pages.</p>
+                            <p>Advanced Level with the ability to create complex and interactive web pages.</p>
                         </div>
                         <div className='skill-card'>
                             <h1>React.js</h1>
@@ -190,11 +190,11 @@ const LandingPage = () => {
                     <p>Feel free to get in touch with me on any socail media platform</p>
                 </div>
                 <div className='contact-content'>
-                    <a href="https://wa.me/249928283601" className='contact-card'>
+                    <a href="https://wa.me/249998651881" className='contact-card'>
                         <SiWhatsapp size={45} />
                         <h6>Whatsapp</h6>
                     </a>
-                    <a href="mailto:al999aliko@gmail.com" className='contact-card'>
+                    <a href="mailto:real249ali@gmail.com" className='contact-card'>
                         <SiGmail size={45} />
                         <h6>Email</h6>
                     </a>
@@ -204,7 +204,7 @@ const LandingPage = () => {
                     </a>
                     <a href="https://github.com/249f" className='contact-card'>
                         <SiGithub size={45} />
-                        <h6>Github</h6>
+                        <h6>GitHub</h6>
                     </a>
 
                     <a href="https://www.facebook.com/lgezz" className='contact-card'>
@@ -219,11 +219,11 @@ const LandingPage = () => {
                         <SiDiscord size={45} />
                         <h6>Discord</h6>
                     </a>
-                    <a href="https://t.me/otp_ali" className='contact-card'>
+                    <a href="https://t.me/ali_abdellatif" className='contact-card'>
                         <SiTelegram size={45} />
                         <h6>Telegram</h6>
                     </a>
-                    <a href="https://www.instagram.com/249f4" className='contact-card'>
+                    <a href="https://www.instagram.com/ali.abdelllatif" className='contact-card'>
                         <SiInstagram size={45} />
                         <h6>Instagram</h6>
                     </a>
