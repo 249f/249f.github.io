@@ -161,9 +161,9 @@ const LandingPage = () => {
                     <div className='soft-skills'>
 
                         <div className='soft-skill-card'>
-                            <h2> Risk prediction :  </h2>
+                            <h2> Continuous Learning :  </h2>
                             <p>
-                                I proactively analyze the impact of every architectural decision, ensuring system stability while minimizing potential technical debt.
+                                Constantly improving my skills, exploring new technologies, and adapting to evolving frontend development practices.
                             </p>
                         </div>
                         <div className='soft-skill-card'>
@@ -174,12 +174,57 @@ const LandingPage = () => {
                         </div>
 
                         <div className='soft-skill-card'>
+                            <h2>Time Management : </h2>
+                            <p>
+                                Prioritizing tasks, organizing development workflows, and delivering features efficiently within project deadlines.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <h1 className='title'>Engineering Mindset :</h1>
+                    <div className='soft-skills'>
+
+                        <div className='soft-skill-card'>
+                            <h2> Risk prediction :  </h2>
+                            <p>
+                                I proactively analyze the impact of every architectural decision, ensuring system stability while minimizing potential technical debt.
+                            </p>
+                        </div>
+                        {/* <div className='soft-skill-card'>
+                            <h2> Problem Solving :  </h2>
+                            <p>
+                                I approach complex challenges with a logic driven mindset, focusing on finding the most efficient, scalable solutions for the end user.
+                            </p>
+                        </div> */}
+
+                        <div className='soft-skill-card'>
                             <h2>Budget Utilization : </h2>
                             <p>
                                 Finding the best way to lower the expenses of the project and maximize the benefits.
                             </p>
                         </div>
                     </div>
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
 
