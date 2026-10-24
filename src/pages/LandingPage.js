@@ -195,12 +195,7 @@ const LandingPage = () => {
                                 I proactively analyze the impact of every architectural decision, ensuring system stability while minimizing potential technical debt.
                             </p>
                         </div>
-                        {/* <div className='soft-skill-card'>
-                            <h2> Problem Solving :  </h2>
-                            <p>
-                                I approach complex challenges with a logic driven mindset, focusing on finding the most efficient, scalable solutions for the end user.
-                            </p>
-                        </div> */}
+
 
                         <div className='soft-skill-card'>
                             <h2>Budget Utilization : </h2>
