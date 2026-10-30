@@ -1,21 +1,22 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import './certificates.css';
-import carw from '../assets/images/projectsSS/carsw.png';
+import EFSET from '../assets/images/projectsSS/EFSET.png';
+import jsc from '../assets/images/projectsSS/jsc.png';
 
 // Dummy certificate data — replace with your real certificates later
 const certificates = [
     {
-        title: 'Front-End Web Development',
-        description: 'Completed an intensive front-end web development course covering HTML, CSS, JavaScript, and React fundamentals with hands-on projects.',
-        image: carw,
-        link: 'https://example.com/certificate-1',
+        title: 'JavaScript Course',
+        description: 'javascript course from nouvil Academy, it was a great course that helped me to improve my javascript skills',
+        image: jsc,
+        link: 'https://ar.nouvil.net/verify/C3D2C4F8F15C092B3E0A',
     },
     {
-        title: 'Front-End Web Development',
-        description: 'Completed an intensive front-end web development course covering HTML, CSS, JavaScript, and React fundamentals with hands-on projects.',
-        image: carw,
-        link: 'https://example.com/certificate-1',
+        title: 'EF SET English Certificate (C1 Advanced)',
+        description: 'EF SET certificate in English, it was a great certificate that helped me test my english skills, getting advanced c1 level in english, it was a great achievement as this test helped me a lot in my job hunting process',
+        image: EFSET,
+        link: 'https://cert.efset.org/BUEkd3',
     },
 
 ];
