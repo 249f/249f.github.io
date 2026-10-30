@@ -6,6 +6,8 @@ import ZaytooonSS from '../assets/images/projectsSS/zaytooon.png';
 import dbd from '../assets/images/projectsSS/dbd.png';
 import d3g from '../assets/images/projectsSS/3dg.png';
 import carw from '../assets/images/projectsSS/carsw.png';
+import ptw from '../assets/images/projectsSS/ptw.png';
+import ssmp from '../assets/images/projectsSS/ssmp.png';
 import { Link } from 'react-router-dom';
 const Projects = () => {
     return (
@@ -117,6 +119,70 @@ const Projects = () => {
 
 
                         </div>
+
+
+                        {/*4th hobby card*/}
+                        <div className='hobby-card'>
+                            <div className='production-img-container'>
+                                <img src={ptw} alt="prayer times website img" />
+                            </div>
+                            <h4>
+                                Prayer Times Website
+                            </h4>
+                            <p>
+                                a website that shows prayer times for a specific city , it includes a list of prayer times for the day depnding on the Selected city.
+                                <br />
+                                <br />
+                                for this website i used pure HTML , CSS , JavaScript , the main goal was to practice connecting with the api.
+                            </p>
+                            <div className='production-buttons'>
+                                <a href="https://pt-w.vercel.app" target='_blank' rel='noopener noreferrer'>Visit Website</a>
+                                <a href='https://github.com/249f/Prayer-Times-Website'>See on GitHub</a>
+
+                            </div>
+
+
+                        </div>
+
+
+                        {/*5th hobby card*/}
+                        <div className='hobby-card'>
+                            <div className='production-img-container'>
+                                <img src={ssmp} alt="simple social media platform img" />
+                            </div>
+                            <h4>
+                                Simple Social Media Platform (SSMP)
+                            </h4>
+                            <p>
+                                a simple social media platform , it's similar to facebook, users can create posts, comment on them.
+                                <br />
+                                <br />
+                                for this website i used pure HTML , CSS , JavaScript , i used a free API provided by the Course, work still in progress.
+                            </p>
+                            <div className='production-buttons'>
+                                <a href="https://simple-social-media-platform.vercel.app" target='_blank' rel='noopener noreferrer'>Visit Website</a>
+                                <a href='https://github.com/249f/simple-social-media-platform'>See on GitHub</a>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                     </div>
