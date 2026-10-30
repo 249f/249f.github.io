@@ -80,9 +80,9 @@ const LandingPage = () => {
                     </a>
 
                     <a href='https://github.com/249f' className='d4-card scroll-reveal stagger-4'>
-                        <h1> Under Development </h1>
+                        <h1>Social Media Platform</h1>
                         <p>
-                            {/* <img src="https://3d-g.vercel.app/api/flat?user=249f" alt="2d flat graph" />  */}
+                            building a simple social media platform using pure html css and vanilla javascript, the idea is to practice web development fundmentals and Restful API , this project is still under development.
 
                         </p>
 
