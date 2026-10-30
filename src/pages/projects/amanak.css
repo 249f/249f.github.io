@@ -1,0 +1,5 @@
+.amanak-page {
+    background-color: var(--bg-secondary);
+    min-height: 100vh;
+    position: relative;
+}

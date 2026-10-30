@@ -1,11 +1,11 @@
 .main-projects {
-    background-color: #1c1c1c;
-    color: rgb(205, 205, 205);
+    background-color: var(--main-projects-bg);
+    color: var(--text-secondary);
     padding-bottom: 120px;
 }
 
 .projects-container {
-    color: aliceblue;
+    color: var(--text-primary);
     margin-top: 30px;
 }
 
@@ -17,14 +17,20 @@
 }
 
 .production-card {
-    border: 2px solid #ffffff;
+    border: 2px solid var(--border-strong);
     width: fit-content;
     border-radius: 20px;
     padding: 13px;
     max-width: 40%;
     min-width: 335px;
+    background: var(--bg-card);
+    backdrop-filter: blur(8px);
+    transition: 0.4s ease;
+}
 
-
+.production-card:hover {
+    box-shadow: 0 8px 32px var(--card-hover-shadow);
+    border-color: var(--border-hover);
 }
 
 .production-card img {
@@ -55,6 +61,7 @@
 .production-card p {
     height: 140px;
     min-height: fit-content;
+    color: var(--text-secondary);
 }
 
 .production-cards-holder {
@@ -71,10 +78,10 @@
 }
 
 .production-buttons a {
-    background-color: rgb(205, 205, 205);
+    background-color: var(--production-btn-bg);
     margin: 10px;
     text-decoration: none;
-    color: #1c1c1c;
+    color: var(--production-btn-text);
     padding: 10px;
     border-radius: 10px;
     width: 80%;
@@ -85,28 +92,34 @@
 }
 
 .production-buttons a:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: var(--production-btn-hover-bg);
+    color: var(--production-btn-hover-text);
     transition: 0.5s;
-    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px var(--production-btn-hover-shadow);
     transform: scale(1.04);
 }
 
 .projects-main h2 {
-    border-left: 5px solid rgb(205, 205, 205);
+    border-left: 5px solid var(--project-heading-border);
     padding-left: 8px;
     margin-bottom: 10px;
 }
 
 .hobby-card {
-    border: 2px solid #ffffff;
+    border: 2px solid var(--border-strong);
     width: fit-content;
     border-radius: 20px;
     padding: 13px;
     max-width: 40%;
     min-width: 335px;
+    background: var(--bg-card);
+    backdrop-filter: blur(8px);
+    transition: 0.4s ease;
+}
 
-
+.hobby-card:hover {
+    box-shadow: 0 8px 32px var(--card-hover-shadow);
+    border-color: var(--border-hover);
 }
 
 .hobby-card img {
@@ -139,4 +152,5 @@
 .hobby-cards-holder p {
     height: 100px;
     min-height: fit-content;
+    color: var(--text-secondary);
 }
