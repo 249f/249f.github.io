@@ -1,6 +1,7 @@
 import './App.css';
 import LandingPage from './pages/LandingPage';
 import Projects from './pages/projects';
+import Certificates from './pages/certificates';
 import Amanak from './pages/projects/amanak';
 import Zaytooon from './pages/projects/zaytooon';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -15,6 +16,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/zaytooon" element={<Zaytooon />} />
           <Route path="/projects/amanak" element={<Amanak />} />
+          <Route path="/certificates" element={<Certificates />} />
         </Routes>
       </Router>
       <Analytics />
