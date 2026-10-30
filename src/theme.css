@@ -105,10 +105,10 @@
     --production-btn-hover-text: #fff;
     --production-btn-hover-shadow: rgba(61, 56, 50, 0.4);
 
-    --particle-color-1: rgba(180, 160, 120, 0.25);
-    --particle-color-2: rgba(160, 140, 100, 0.18);
-    --particle-color-3: rgba(120, 100, 60, 0.3);
-    --particle-glow: rgba(180, 160, 120, 0.4);
+    --particle-color-1: rgba(105, 93, 69, 0.25);
+    --particle-color-2: rgba(77, 67, 48, 0.18);
+    --particle-color-3: rgba(68, 58, 39, 0.3);
+    --particle-glow: rgba(87, 85, 81, 0.473);
 
     --divider-color: rgba(61, 56, 50, 0.6);
     --divider-glow: rgba(61, 56, 50, 0.3);

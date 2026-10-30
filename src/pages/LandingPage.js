@@ -3,11 +3,11 @@ import './LandingPage.css';
 import Navbar from '../components/Navbar/Navbar';
 import HeroParticles from '../components/HeroParticles/HeroParticles';
 import MyPicture from '../assets/images/myPicture.webp';
-import { SiAppwrite, SiCss, SiGithub, SiHtml5, SiJavascript, SiReact, SiVercel, SiNetlify, SiGit, SiWhatsapp, SiGmail, SiFacebook, SiX, SiDiscord, SiTelegram, SiInstagram, SiFigma, SiNextdotjs, SiSupabase, SiKalilinux } from '@icons-pack/react-simple-icons';
+import { SiAppwrite, SiCss, SiGithub, SiHtml5, SiJavascript, SiReact, SiVercel, SiNetlify, SiGit, SiWhatsapp, SiGmail, SiFacebook, SiX, SiDiscord, SiTelegram, SiInstagram, SiFigma, SiNextdotjs, SiSupabase, SiKalilinux, SiBootstrap } from '@icons-pack/react-simple-icons';
 import { FaLinkedin } from 'react-icons/fa';
 import useScrollReveal from '../hooks/useScrollReveal';
 
-const skills = [<SiAppwrite size={50} />, <SiHtml5 size={50} />, <SiCss size={50} />, <SiJavascript size={50} />, <SiReact size={50} />, <SiGithub size={50} />, <SiFigma size={50} />, <SiVercel size={50} />, <SiNetlify size={50} />, <SiGit size={50} />, <SiNextdotjs size={50} />, <SiSupabase size={50} />, <SiKalilinux size={50} />];
+const skills = [<SiAppwrite size={50} />, <SiHtml5 size={50} />, <SiCss size={50} />, <SiJavascript size={50} />, <SiReact size={50} />, <SiGithub size={50} />, <SiFigma size={50} />, <SiVercel size={50} />, <SiNetlify size={50} />, <SiGit size={50} />, <SiNextdotjs size={50} />, <SiSupabase size={50} />, <SiKalilinux size={50} />, <SiBootstrap size={50} />];
 
 
 const LandingPage = () => {
@@ -80,9 +80,9 @@ const LandingPage = () => {
                     </a>
 
                     <a href='https://github.com/249f' className='d4-card scroll-reveal stagger-4'>
-                        <h1> Under Development </h1>
+                        <h1>Social Media Platform</h1>
                         <p>
-                            {/* <img src="https://3d-g.vercel.app/api/flat?user=249f" alt="2d flat graph" />  */}
+                            building a simple social media platform using pure html css and vanilla javascript, the idea is to practice web development fundmentals and Restful API , this project is still under development.
 
                         </p>
 
@@ -207,11 +207,11 @@ const LandingPage = () => {
 
 
 
-                    
 
 
 
-                    
+
+
 
 
 
