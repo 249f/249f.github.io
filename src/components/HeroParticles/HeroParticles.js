@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useEffect, useRef, useMemo } from 'react';
 import './HeroParticles.css';
 
 const PARTICLE_COUNT = 40;
@@ -8,7 +8,7 @@ const HeroParticles = () => {
     const mouseRef = useRef({ x: 0.5, y: 0.5 });
     const particleDataRef = useRef([]);
     const animFrameRef = useRef(null);
-    const [, forceUpdate] = useState(0);
+    // const [, forceUpdate] = useState(0);
 
     // Generate particle configs once
     const particles = useMemo(() => {
