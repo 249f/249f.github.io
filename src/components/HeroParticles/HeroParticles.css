@@ -1,0 +1,79 @@
+.hero-particles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.hero-particle {
+    position: absolute;
+    pointer-events: none;
+    will-change: transform, left, top;
+    /* Override the global theme transition — particles must animate instantly */
+    transition: none !important;
+    transition-property: none !important;
+    transition-duration: 0s !important;
+}
+
+/* ===== Particle Variants ===== */
+.particle-circle {
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, var(--particle-glow), var(--particle-color-1));
+    box-shadow: 0 0 12px 2px var(--particle-glow);
+}
+
+.particle-diamond {
+    border-radius: 3px;
+    background: var(--particle-color-3);
+    box-shadow: 0 0 16px 3px var(--particle-glow);
+    transform: rotate(45deg);
+}
+
+.particle-dot {
+    border-radius: 50%;
+    background: var(--particle-color-2);
+    box-shadow:
+        0 0 6px 1px var(--particle-glow),
+        0 0 20px 4px var(--particle-color-1);
+}
+
+/* ===== Ambient glow orbs ===== */
+.hero-particles::before,
+.hero-particles::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+    animation: float-glow 14s ease-in-out infinite alternate;
+}
+
+.hero-particles::before {
+    width: 350px;
+    height: 350px;
+    background: var(--particle-color-3);
+    top: 8%;
+    left: 12%;
+    opacity: 0.7;
+}
+
+.hero-particles::after {
+    width: 280px;
+    height: 280px;
+    background: var(--particle-color-1);
+    bottom: 12%;
+    right: 8%;
+    opacity: 0.6;
+    animation-delay: -7s;
+}
+
+@keyframes float-glow {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(40px, -25px) scale(1.2);
+    }
+}

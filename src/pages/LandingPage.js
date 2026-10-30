@@ -1,35 +1,40 @@
 import React from 'react';
 import './LandingPage.css';
 import Navbar from '../components/Navbar/Navbar';
+import HeroParticles from '../components/HeroParticles/HeroParticles';
 import MyPicture from '../assets/images/myPicture.webp';
 import { SiAppwrite, SiCss, SiGithub, SiHtml5, SiJavascript, SiReact, SiVercel, SiNetlify, SiGit, SiWhatsapp, SiGmail, SiFacebook, SiX, SiDiscord, SiTelegram, SiInstagram, SiFigma, SiNextdotjs, SiSupabase, SiKalilinux } from '@icons-pack/react-simple-icons';
 import { FaLinkedin } from 'react-icons/fa';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 const skills = [<SiAppwrite size={50} />, <SiHtml5 size={50} />, <SiCss size={50} />, <SiJavascript size={50} />, <SiReact size={50} />, <SiGithub size={50} />, <SiFigma size={50} />, <SiVercel size={50} />, <SiNetlify size={50} />, <SiGit size={50} />, <SiNextdotjs size={50} />, <SiSupabase size={50} />, <SiKalilinux size={50} />];
 
 
 const LandingPage = () => {
+    useScrollReveal();
+
     return (
 
         <div className="landing-page" id='home'>
             <Navbar />
             {/*hero section*/}
             <div className="hero">
+                <HeroParticles />
+                <div className="hero-content">
+                    <img src={MyPicture} alt="ali" className="scroll-reveal-scale" />
+                    <div className="hero-text scroll-reveal">
+                        <h1>ALi Abdellatif</h1>
+                        <p>Software Engineering Student with a real world hands-on experience</p>
 
-                <img src={MyPicture} alt="ali" />
-                <div className="hero-text">
-                    <h1>ALi Abdellatif</h1>
-                    <p>Software Engineering Student with a real world hands-on experience</p>
 
-
+                    </div>
                 </div>
-
 
 
             </div>
             {/*Projects section*/}
             <div className='projects' id='projects'>
-                <div className='projects-title'>
+                <div className='projects-title scroll-reveal'>
                     <h1> Hands-on Experience </h1>
                     <p> learned many things from publishing projects to production </p>
                 </div>
@@ -37,7 +42,7 @@ const LandingPage = () => {
                 {/* projects cards */}
                 <div className='project-cards-holder'>
 
-                    <a href='https://amanak-sd.com' className='amanak-card' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://amanak-sd.com' className='amanak-card scroll-reveal stagger-1' target='_blank' rel='noopener noreferrer'>
 
 
                         <h1> Warehouse Management Ecosystem </h1>
@@ -46,16 +51,16 @@ const LandingPage = () => {
                         </p>
                         <p>
                             <ul>
-                                <li> <strong> Role-Based Access Control : </strong> multi-tiered authorization system defining specific permissions for Admins, Warehouse Managers, and Sales Staff. to ensure data security and operational accountability.</li>
-                                <li> <strong> Reliability : </strong> Implemented Atomic Transactions to prevent partial data entries or ghost stock issues, ensures that if a connection fails mid transaction the data remains consistent.</li>
-                                <li> <strong> Optimized Performance : </strong> Utilized smart caching and lightweight query structures to minimize bandwidth consumption, delivering smooth user experience even on unstable networks.</li>
-                                <li> <strong> Bulk Operations : </strong> Developed a specialized sales module capable of processing large scale updates, such as Global Percentage based Price Adjustments, efficiently and reliably.</li>
+                                <li> <strong>Role-Based Access Control : </strong> multi-tiered authorization system defining specific permissions for Admins, Warehouse Managers, and Sales Staff. to ensure data security and operational accountability.</li>
+                                <li> <strong>Reliability : </strong> Implemented Atomic Transactions to prevent partial data entries or ghost stock issues, ensures that if a connection fails mid transaction the data remains consistent.</li>
+                                <li> <strong>Optimized Performance : </strong> Utilized smart caching and lightweight query structures to minimize bandwidth consumption, delivering smooth user experience even on unstable networks.</li>
+                                <li> <strong>Bulk Operations : </strong> Developed a specialized sales module capable of processing large scale updates, such as Global Percentage based Price Adjustments, efficiently and reliably.</li>
                             </ul>
                         </p>
 
                     </a>
 
-                    <a href='https://design-by-drop.vercel.app' className='dbd-card' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://design-by-drop.vercel.app' className='dbd-card scroll-reveal stagger-2' target='_blank' rel='noopener noreferrer'>
 
                         <h1> Design By Drop </h1>
                         <p>
@@ -64,7 +69,7 @@ const LandingPage = () => {
 
                     </a>
 
-                    <a href='https://play.google.com/store/apps/details?id=com.zaytooon.sudandelivery' className='Zaytooon-card' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://play.google.com/store/apps/details?id=com.zaytooon.sudandelivery' className='Zaytooon-card scroll-reveal stagger-3' target='_blank' rel='noopener noreferrer'>
 
                         <h1> Food Delivery Platform </h1>
                         <p>
@@ -74,7 +79,7 @@ const LandingPage = () => {
 
                     </a>
 
-                    <a href='https://github.com/249f' className='d4-card'>
+                    <a href='https://github.com/249f' className='d4-card scroll-reveal stagger-4'>
                         <h1> Under Development </h1>
                         <p>
                             {/* <img src="https://3d-g.vercel.app/api/flat?user=249f" alt="2d flat graph" />  */}
@@ -89,15 +94,12 @@ const LandingPage = () => {
 
 
 
-
-
-
             </div>
 
 
             {/* skills section */}
             <div className='skills' id='skills'>
-                <div className='skills-title'>
+                <div className='skills-title scroll-reveal'>
                     <h1>Skills</h1>
                     <p>improving and learning everyday</p>
                 </div>
@@ -127,25 +129,25 @@ const LandingPage = () => {
 
                     {/* skills  details */}
 
-                    <h1 className='title'>Tech Stack :</h1>
+                    <h1 className='title scroll-reveal-left'>Tech Stack :</h1>
                     <div className='skills-details'>
-                        <div className='skill-card'>
+                        <div className='skill-card scroll-reveal-scale stagger-1'>
                             <h1>HTML</h1>
                             <p>Advanced Level with deep understanding of syntax and accessibility.</p>
                         </div>
-                        <div className='skill-card-css'>
+                        <div className='skill-card-css scroll-reveal-scale stagger-2'>
                             <h1>CSS</h1>
                             <p>Good understanding with the ability to create complex and stunning layouts and animations, while keeping it responsive with different screen sizes.</p>
                         </div>
-                        <div className='skill-card-appwrite'>
+                        <div className='skill-card-appwrite scroll-reveal-scale stagger-3'>
                             <h1>Appwrite</h1>
                             <p>Been a heavy user of appwrite for the past year, used it in multiple projects and have a deep understanding of its features and capabilities.</p>
                         </div>
-                        <div className='skill-card'>
+                        <div className='skill-card scroll-reveal-scale stagger-4'>
                             <h1>JavaScript</h1>
                             <p>Advanced Level with the ability to create complex and interactive web pages.</p>
                         </div>
-                        <div className='skill-card'>
+                        <div className='skill-card scroll-reveal-scale stagger-5'>
                             <h1>React.js</h1>
                             <p>Basic understanding with the ability to create simple and interactive web applications.</p>
                         </div>
@@ -157,23 +159,23 @@ const LandingPage = () => {
 
                     {/* Technical skills */}
 
-                    <h1 className='title'>Soft Skills :</h1>
+                    <h1 className='title scroll-reveal-left'>Soft Skills :</h1>
                     <div className='soft-skills'>
 
-                        <div className='soft-skill-card'>
+                        <div className='soft-skill-card scroll-reveal stagger-1'>
                             <h2> Continuous Learning :  </h2>
                             <p>
                                 Constantly improving my skills, exploring new technologies, and adapting to evolving frontend development practices.
                             </p>
                         </div>
-                        <div className='soft-skill-card'>
+                        <div className='soft-skill-card scroll-reveal stagger-2'>
                             <h2> Problem Solving :  </h2>
                             <p>
                                 I approach complex challenges with a logic driven mindset, focusing on finding the most efficient, scalable solutions for the end user.
                             </p>
                         </div>
 
-                        <div className='soft-skill-card'>
+                        <div className='soft-skill-card scroll-reveal stagger-3'>
                             <h2>Time Management : </h2>
                             <p>
                                 Prioritizing tasks, organizing development workflows, and delivering features efficiently within project deadlines.
@@ -184,12 +186,10 @@ const LandingPage = () => {
 
 
 
-
-
-                    <h1 className='title'>Engineering Mindset :</h1>
+                    <h1 className='title scroll-reveal-left'>Engineering Mindset :</h1>
                     <div className='soft-skills'>
 
-                        <div className='soft-skill-card'>
+                        <div className='soft-skill-card scroll-reveal stagger-1'>
                             <h2> Risk prediction :  </h2>
                             <p>
                                 I proactively analyze the impact of every architectural decision, ensuring system stability while minimizing potential technical debt.
@@ -197,7 +197,7 @@ const LandingPage = () => {
                         </div>
 
 
-                        <div className='soft-skill-card'>
+                        <div className='soft-skill-card scroll-reveal stagger-2'>
                             <h2>Budget Utilization : </h2>
                             <p>
                                 Finding the best way to lower the expenses of the project and maximize the benefits.
@@ -211,11 +211,7 @@ const LandingPage = () => {
 
 
 
-
-
-
-
-
+                    
 
 
 
@@ -225,45 +221,45 @@ const LandingPage = () => {
 
             {/* Contact section */}
             <div className='contact' id='contact'>
-                <div className='contact-title'>
+                <div className='contact-title scroll-reveal-left'>
                     <h1>Contact Me :</h1>
                     <p>Feel free to get in touch with me on any socail media platform</p>
                 </div>
                 <div className='contact-content'>
-                    <a href="https://wa.me/249998651881" className='contact-card'>
+                    <a href="https://wa.me/249998651881" className='contact-card scroll-reveal-scale stagger-1'>
                         <SiWhatsapp size={45} />
                         <h6>Whatsapp</h6>
                     </a>
-                    <a href="mailto:real249ali@gmail.com" className='contact-card'>
+                    <a href="mailto:real249ali@gmail.com" className='contact-card scroll-reveal-scale stagger-2'>
                         <SiGmail size={45} />
                         <h6>Email</h6>
                     </a>
-                    <a href="https://www.linkedin.com/in/ali-abdellatif-1482693a1" className='contact-card'>
+                    <a href="https://www.linkedin.com/in/ali-abdellatif-1482693a1" className='contact-card scroll-reveal-scale stagger-3'>
                         <FaLinkedin size={45} />
                         <h6>Linkedin</h6>
                     </a>
-                    <a href="https://github.com/249f" className='contact-card'>
+                    <a href="https://github.com/249f" className='contact-card scroll-reveal-scale stagger-4'>
                         <SiGithub size={45} />
                         <h6>GitHub</h6>
                     </a>
 
-                    <a href="https://www.facebook.com/lgezz" className='contact-card'>
+                    <a href="https://www.facebook.com/lgezz" className='contact-card scroll-reveal-scale stagger-5'>
                         <SiFacebook size={45} />
                         <h6>Facebook</h6>
                     </a>
-                    <a href="https://twitter.com/249_ff" className='contact-card'>
+                    <a href="https://twitter.com/249_ff" className='contact-card scroll-reveal-scale stagger-1'>
                         <SiX size={45} />
                         <h6>X</h6>
                     </a>
-                    <a href="https://discord.gg/mSYMs58t" className='contact-card'>
+                    <a href="https://discord.gg/mSYMs58t" className='contact-card scroll-reveal-scale stagger-2'>
                         <SiDiscord size={45} />
                         <h6>Discord</h6>
                     </a>
-                    <a href="https://t.me/ali_abdellatif" className='contact-card'>
+                    <a href="https://t.me/ali_abdellatif" className='contact-card scroll-reveal-scale stagger-3'>
                         <SiTelegram size={45} />
                         <h6>Telegram</h6>
                     </a>
-                    <a href="https://www.instagram.com/ali.abdelllatif" className='contact-card'>
+                    <a href="https://www.instagram.com/ali.abdelllatif" className='contact-card scroll-reveal-scale stagger-4'>
                         <SiInstagram size={45} />
                         <h6>Instagram</h6>
                     </a>

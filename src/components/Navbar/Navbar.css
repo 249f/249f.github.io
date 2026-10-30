@@ -10,26 +10,23 @@
     left: 0;
     z-index: 1000;
     display: flex;
-    background: rgba(16, 16, 16, 0.4);
+    background: var(--navbar-bg);
     backdrop-filter: blur(12px);
-    box-shadow: 0 8px 32px 0 rgba(235, 235, 235, 0.1);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 var(--navbar-shadow);
 
     width: 100%;
     height: 100px;
     align-items: center;
     justify-content: space-between;
     padding-left: 15px;
-
-
+    border-bottom: 1px solid var(--border-color);
 }
 
 .logo-holder {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-
-
 }
 
 .logo-holder img {
@@ -41,7 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: invert(100%);
+    filter: var(--logo-invert);
 }
 
 .links-holder {
@@ -62,7 +59,7 @@
 
 .links-holder ul li a {
     text-decoration: none;
-    color: #e3e3e3;
+    color: var(--text-primary);
     font-size: 17px;
 
     font-weight: 400;
@@ -70,29 +67,119 @@
     transition: 0.3s ease-in-out;
 }
 
+.links-holder ul li a:hover {
+    color: var(--text-accent);
+    text-shadow: 0 0 8px var(--contact-hover-glow);
+}
+
+/* ===== NAVBAR RIGHT SECTION ===== */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 40px;
+}
+
 .navbar .button-holder {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 40px;
 }
 
 .navbar .button-holder button {
     padding: 10px 20px;
     font-size: 20px;
-    background-color: transparent;
+    background-color: var(--btn-bg);
     border-radius: 25px;
     cursor: pointer;
-    color: #e3e3e3;
+    color: var(--btn-text);
     font-weight: 400;
-    border: 2px solid #e3e3e3;
+    border: 2px solid var(--btn-border);
     transition: 0.3s ease-in-out;
 }
 
 .navbar .button-holder button:hover {
-    background-color: #e3e3e3;
-    color: #101010;
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
     transition: 0.3s ease-in-out;
+}
+
+/* ===== THEME TOGGLE ===== */
+.theme-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+
+.theme-toggle-track {
+    position: relative;
+    width: 56px;
+    height: 28px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    border: 1.5px solid var(--border-color);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px;
+    backdrop-filter: blur(4px);
+    transition: all 0.4s ease;
+}
+
+[data-theme="light"] .theme-toggle-track {
+    background: linear-gradient(135deg, rgba(0,0,0,0.04), rgba(0,0,0,0.02));
+    border-color: var(--border-strong);
+}
+
+.theme-toggle:hover .theme-toggle-track {
+    border-color: var(--border-hover);
+    box-shadow: 0 0 16px var(--particle-glow);
+}
+
+.theme-toggle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+.theme-icon-sun {
+    color: #f5c542;
+    opacity: 0.4;
+}
+
+.theme-icon-moon {
+    color: #8ba4c7;
+    opacity: 1;
+}
+
+[data-theme="light"] .theme-icon-sun {
+    opacity: 1;
+    color: #d4940a;
+}
+
+[data-theme="light"] .theme-icon-moon {
+    opacity: 0.4;
+}
+
+.theme-toggle-thumb {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e3e3e3, #c0c0c0);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.theme-toggle-thumb.thumb-light {
+    left: 31px;
+    background: linear-gradient(135deg, #f5c542, #d4940a);
+    box-shadow: 0 2px 8px rgba(245, 197, 66, 0.4);
 }
 
 
@@ -113,5 +200,29 @@
 
     .navbar {
         height: 70px;
+    }
+
+    .navbar-right {
+        padding-right: 15px;
+        gap: 12px;
+    }
+
+    .theme-toggle-track {
+        width: 48px;
+        height: 24px;
+    }
+
+    .theme-toggle-thumb {
+        width: 16px;
+        height: 16px;
+    }
+
+    .theme-toggle-thumb.thumb-light {
+        left: 27px;
+    }
+
+    .theme-toggle-icon svg {
+        width: 11px;
+        height: 11px;
     }
 }

@@ -1,0 +1,202 @@
+/* ===== THEME VARIABLES ===== */
+
+/* Dark Theme (default) */
+:root,
+[data-theme="dark"] {
+    --bg-primary: #121212;
+    --bg-secondary: #1c1c1c;
+    --bg-tertiary: #242424;
+    --bg-elevated: #2a2a2a;
+    --bg-card: rgba(0, 0, 0, 0.187);
+
+    --text-primary: #e3e3e3;
+    --text-secondary: rgb(205, 205, 205);
+    --text-muted: #999;
+    --text-accent: #ffffff;
+
+    --border-color: rgba(255, 255, 255, 0.358);
+    --border-strong: #c4c4c4;
+    --border-hover: rgba(255, 255, 255, 0.505);
+
+    --navbar-bg: rgba(16, 16, 16, 0.4);
+    --navbar-shadow: rgba(235, 235, 235, 0.1);
+
+    --hero-gradient: linear-gradient(200deg, #353535 0%, #121212 50%, #242424 100%);
+    --projects-gradient: linear-gradient(123deg, rgb(5, 5, 5) 0%, rgb(16, 16, 16) 50%, rgb(2, 2, 2) 100%);
+
+    --card-hover-shadow: rgba(255, 255, 255, 0.383);
+    --btn-bg: transparent;
+    --btn-text: #e3e3e3;
+    --btn-border: #e3e3e3;
+    --btn-hover-bg: #e3e3e3;
+    --btn-hover-text: #101010;
+
+    --contact-hover-glow: #ffffff;
+
+    --logo-invert: invert(100%);
+
+    --skill-card-bg: #1c1c1c;
+    --skill-card-border: #c4c4c4;
+
+    --production-btn-bg: rgb(205, 205, 205);
+    --production-btn-text: #1c1c1c;
+    --production-btn-hover-bg: #ffffff;
+    --production-btn-hover-text: #000;
+    --production-btn-hover-shadow: rgb(255, 255, 255);
+
+    --particle-color-1: rgba(255, 255, 255, 0.18);
+    --particle-color-2: rgba(255, 255, 255, 0.12);
+    --particle-color-3: rgba(200, 180, 140, 0.22);
+    --particle-glow: rgba(255, 255, 255, 0.35);
+
+    --divider-color: rgba(255, 255, 255, 0.76);
+    --divider-glow: rgba(255, 255, 255, 0.76);
+
+    --scrollbar-track: #1c1c1c;
+    --scrollbar-thumb: #444;
+
+    --soft-skill-border: #c4c4c4;
+    --project-heading-border: rgb(205, 205, 205);
+
+    --main-projects-bg: #1c1c1c;
+}
+
+/* Light Theme — luxurious warm palette */
+[data-theme="light"] {
+    --bg-primary: #f7f5f0;
+    --bg-secondary: #eeeae3;
+    --bg-tertiary: #e6e0d6;
+    --bg-elevated: #ffffff;
+    --bg-card: rgba(255, 255, 255, 0.7);
+
+    --text-primary: #1a1a1a;
+    --text-secondary: #3d3832;
+    --text-muted: #7a7267;
+    --text-accent: #0d0d0d;
+
+    --border-color: rgba(180, 165, 140, 0.35);
+    --border-strong: #b8a88a;
+    --border-hover: rgba(160, 140, 100, 0.6);
+
+    --navbar-bg: rgba(247, 245, 240, 0.75);
+    --navbar-shadow: rgba(0, 0, 0, 0.08);
+
+    /* --hero-gradient: linear-gradient(200deg, #f0ebe3 0%, #e8e0d4 40%, #f5f1ea 100%); */
+    --hero-gradient: linear-gradient(200deg, rgba(233, 207, 136, 0.769) 0%, #ad9065 40%, #e9cc9bad 100%);
+    --projects-gradient: linear-gradient(123deg, #eeeae3 0%, #f2ede5 50%, #e8e0d4 100%);
+
+    --card-hover-shadow: rgba(160, 140, 100, 0.25);
+    --btn-bg: transparent;
+    --btn-text: #3d3832;
+    --btn-border: #3d3832;
+    --btn-hover-bg: #3d3832;
+    --btn-hover-text: #f7f5f0;
+
+    --contact-hover-glow: #6b5c3e;
+
+    --logo-invert: invert(0%);
+
+    --skill-card-bg: #f7f5f0;
+    --skill-card-border: #c8b898;
+
+    --production-btn-bg: #3d3832;
+    --production-btn-text: #f7f5f0;
+    --production-btn-hover-bg: #1a1a1a;
+    --production-btn-hover-text: #fff;
+    --production-btn-hover-shadow: rgba(61, 56, 50, 0.4);
+
+    --particle-color-1: rgba(180, 160, 120, 0.25);
+    --particle-color-2: rgba(160, 140, 100, 0.18);
+    --particle-color-3: rgba(120, 100, 60, 0.3);
+    --particle-glow: rgba(180, 160, 120, 0.4);
+
+    --divider-color: rgba(61, 56, 50, 0.6);
+    --divider-glow: rgba(61, 56, 50, 0.3);
+
+    --scrollbar-track: #eeeae3;
+    --scrollbar-thumb: #c8b898;
+
+    --soft-skill-border: #b8a88a;
+    --project-heading-border: #8a7a5e;
+
+    --main-projects-bg: #f7f5f0;
+}
+
+/* ===== GLOBAL TRANSITION ===== */
+*,
+*::before,
+*::after {
+    transition-property: background-color, color, border-color, box-shadow, filter;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+/* ===== SCROLL REVEAL ANIMATIONS ===== */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-reveal-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.scroll-reveal-left.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-reveal-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.scroll-reveal-right.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-reveal-scale {
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.scroll-reveal-scale.revealed {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stagger delays for children */
+.stagger-1 {
+    transition-delay: 0.1s !important;
+}
+
+.stagger-2 {
+    transition-delay: 0.2s !important;
+}
+
+.stagger-3 {
+    transition-delay: 0.3s !important;
+}
+
+.stagger-4 {
+    transition-delay: 0.4s !important;
+}
+
+.stagger-5 {
+    transition-delay: 0.5s !important;
+}
