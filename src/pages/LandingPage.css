@@ -16,12 +16,22 @@
 .hero {
     text-align: center;
     height: calc(100vh - 150px);
-    background: var(--hero-gradient);
+    /* background: var(--hero-gradient); */
+    background: url('../assets/images/hero/hero2.jpg') center/cover no-repeat;
     display: flex;
     color: var(--text-primary);
     padding: 30px 40px;
     position: relative;
     overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--hero-gradient);
+    opacity: 0.2;
+    z-index: 1;
 }
 
 .hero-content {
