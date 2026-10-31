@@ -16,8 +16,7 @@
 .hero {
     text-align: center;
     height: calc(100vh - 150px);
-    /* background: var(--hero-gradient); */
-    background: url('../assets/images/hero/hero2.jpg') center/cover no-repeat;
+    background: var(--hero-gradient);
     display: flex;
     color: var(--text-primary);
     padding: 30px 40px;
@@ -25,7 +24,13 @@
     overflow: hidden;
 }
 
-.hero::before {
+/* Light mode: show hero image with gradient overlay */
+[data-theme="light"] .hero {
+    /* background: var(--hero-gradient); */
+    background: url('../assets/images/hero/hero2.jpg') center/cover no-repeat;
+}
+
+[data-theme="light"] .hero::before {
     content: '';
     position: absolute;
     inset: 0;
