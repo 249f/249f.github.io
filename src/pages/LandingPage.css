@@ -96,8 +96,47 @@
 
 }
 
+/* ===== HERO CTA BUTTON ===== */
+.hero-cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1.5px solid var(--border-color);
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    margin: 60px auto 0;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
 
+.hero-cta:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--border-hover);
+    box-shadow: 0 0 20px var(--particle-glow);
+    transform: translateY(-2px);
+}
 
+.hero-cta-icon {
+    animation: ctaBounce 2s ease-in-out infinite;
+}
+
+@keyframes ctaBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+}
 /*------------projects section------------*/
 
 .projects {
