@@ -78,7 +78,7 @@
     --border-strong: #b8a88a;
     --border-hover: rgba(160, 140, 100, 0.6);
 
-    --navbar-bg: rgba(247, 245, 240, 0.75);
+    --navbar-bg: rgba(247, 245, 240, 0.151);
     --navbar-shadow: rgba(0, 0, 0, 0.08);
 
     /* --hero-gradient: linear-gradient(200deg, #f0ebe3 0%, #e8e0d4 40%, #f5f1ea 100%); */
